@@ -8,20 +8,22 @@ module.exports = {
     aliases: ["help"],
     execute(api, event, args, prefix) {
         const commands = global.NashBoT.commands;
+        const events = global.NashBoT.events;
         const { threadID, messageID } = event;
         
-        let message = "== 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗟𝗜𝗦𝗧 ==\n\n";
-        
+        let commandList = "⚫️ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁:\n\n";
         let i = 0;
         commands.forEach((cmd, name) => {
-            message += `「 ${++i} 」${prefix}${name}\n`;
+            commandList += `✪ ${++i}. ➢『 ${prefix}${name}』\n`;
         });
-
-        const pageCount = 1; // Adjust this if you have pagination
-
-        const pageText = `\n\n𝗣𝗔𝗚𝗘 »${pageCount}/${pageCount}«`;
-
-        message += pageText;
+        
+        let eventList = "⚫️ 𝗘𝘃𝗲𝗻𝘁 𝗟𝗶𝘀𝘁:\n\n";
+        let j = 0;
+        events.forEach((evnt, name) => {
+            eventList += `✪ ${++j}. ➢『 ${name}』\n`;
+        });
+        
+        let message = commandList + "\n" + eventList;
 
         api.sendMessage(message, threadID, messageID);
     }
