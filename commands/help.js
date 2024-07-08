@@ -11,7 +11,7 @@ module.exports = {
         const events = global.NashBoT.events;
         const { threadID, messageID } = event;
         
-        let commandList = "⚫️ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁:\n\n";
+        let commandList = "⚫️  𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁:\n\n";
         let i = 0;
         commands.forEach((cmd, name) => {
             commandList += `✪ ${++i}. ➢『 ${prefix}${name}』\n`;

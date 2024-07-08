@@ -38,7 +38,7 @@ module.exports = {
           if (data && data.results && data.results.length > 0) {
             const result = data.results[0];
             const imageUrl = result.media_formats.png_transparent.url;
-            const filePath = path.join(__dirname, 'temp_emoji_mix.png');
+            const filePath = path.join(__dirname, 'emojimix/temp_emoji_mix.png');
             
             const responseImage = await axios({
               url: imageUrl,

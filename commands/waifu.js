@@ -25,17 +25,15 @@ module.exports = {
       const data = response.data;
 
       if (data && data.data && data.data.images && data.data.images.length > 0) {
-        const waifu = data.data.images[0]; // Get the first image result
+        const waifu = data.data.images[0];
         const imageUrl = waifu.url;
         const imagePath = path.join(__dirname, 'temp_waifu_image.png');
-
-        // Download the image
+        
         const imageResponse = await axios.get(imageUrl, { responseType: 'arraybuffer' });
         await writeFileAsync(imagePath, imageResponse.data);
-
-        // Send the image
+        
         api.sendMessage({ attachment: fs.createReadStream(imagePath) }, event.threadID, () => {
-          // Delete the temporary file after sending
+          
           fs.unlink(imagePath, (err) => {
             if (err) console.error('Error deleting temporary file:', err);
           });

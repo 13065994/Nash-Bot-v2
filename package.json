@@ -157,6 +157,7 @@
     "isarray": "^1.0.0",
     "isexe": "^2.0.0",
     "isstream": "^0.1.2",
+    "jimp": "^0.22.12",
     "jsbn": "^0.1.1",
     "json-schema": "^0.4.0",
     "json-schema-traverse": "^0.4.1",

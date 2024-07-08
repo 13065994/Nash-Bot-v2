@@ -22,17 +22,16 @@ module.exports = {
           const userResponse = `
 𝗨𝗦𝗘𝗥 𝗜𝗡𝗙𝗢:
 
-➥ 📛 *Name:* ${user.name}
-➥ 🆔 *User ID:* ${senderID}
-➥ 🌐 *Profile URL:* ${user.profileUrl}
+➥ 📛 Name: ${user.name}
+➥ 🆔 User ID: ${senderID}
+➥ 🌐 Profile URL: ${user.profileUrl}
 
 𝗧𝗜𝗠𝗘𝗦𝗧𝗔𝗠𝗣:
 
-➥ 📅 *Date:* ${date}
-➥ ⏰ *Time:* ${time}
+➥ 📅 Date: ${date}
+➥ ⏰ Time: ${time}
 
 Have fun using it, enjoy! ❤️
-Bot Developer: joshua Apostol
           `;
 
           return api.sendMessage(userResponse, event.threadID);
@@ -46,17 +45,16 @@ Bot Developer: joshua Apostol
           const userResponse = `
 𝗨𝗦𝗘𝗥 𝗜𝗡𝗙𝗢:
 
-➥ 📛 *Name:* ${user.name}
-➥ 🆔 *Your ID:* ${senderID}
-➥ 🌐 *Profile URL:* ${user.profileUrl}
+➥ 📛 Name: ${user.name}
+➥ 🆔 Your ID: ${senderID}
+➥ 🌐 Profile URL: ${user.profileUrl}
 
 𝗧𝗜𝗠𝗘𝗦𝗧𝗔𝗠𝗣:
 
-➥ 📅 *Date:* ${date}
-➥ ⏰ *Time:* ${time}
+➥ 📅 Date: ${date}
+➥ ⏰ Time: ${time}
 
 Have fun using it, enjoy! ❤️
-Bot Developer: joshua Apostol
           `;
 
           return api.sendMessage(userResponse, event.threadID);
@@ -72,17 +70,16 @@ Bot Developer: joshua Apostol
           const userResponse = `
 𝗨𝗦𝗘𝗥 𝗜𝗡𝗙𝗢:
 
-➥ 📛 *Name:* ${mentionName.replace('@', '')}
-➥ 🆔 *User ID:* ${mentionID}
-➥ 🌐 *Profile URL:* ${user.profileUrl}
+➥ 📛 Name: ${mentionName.replace('@', '')}
+➥ 🆔 User ID: ${mentionID}
+➥ 🌐 Profile URL: ${user.profileUrl}
 
 𝗧𝗜𝗠𝗘𝗦𝗧𝗔𝗠𝗣:
 
-➥ 📅 *Date:* ${date}
-➥ ⏰ *Time:* ${time}
+➥ 📅 Date: ${date}
+➥ ⏰ Time: ${time}
 
 Have fun using it, enjoy! ❤️
-Bot Developer: joshua Apostol
           `;
 
           api.sendMessage(userResponse, event.threadID);

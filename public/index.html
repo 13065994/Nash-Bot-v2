@@ -22,11 +22,20 @@
       padding: 40px;
       margin-top: 20px;
       margin-bottom: 20px;
+      position: relative;
     }
 
     h1, h2 {
       color: #fff;
       text-align: center;
+    }
+
+    .version {
+      color: red;
+      font-size: 0.8rem;
+      position: absolute;
+      top: 10px;
+      right: 10px;
     }
 
     label {
@@ -202,6 +211,7 @@
 <body>
   <main class="container">
     <h1>Welcome to the NASHBOT</h1>
+    <span class="version">version 2.0</span>
     <div class="form-container">
       <form id="loginForm" class="login-form">
         <label for="botState">Bot State:</label>
