@@ -10,12 +10,12 @@ module.exports = {
   execute: async (api, event, args, prefix) => {
     try {
       const ownerInfo = {
-        name: 'Joshua Apostol',
+        name: 'Gerald max',
         gender: 'male',
-        age: '18',
-        height: '5,6',
-        facebookLink: 'https://www.facebook.com/profile.php?id=100088690249020',
-        status: 'Nothing'
+        age: '12',
+        height: 'secret',
+        facebookLink: 'www.facebook.com/g13065994',
+        status: 'always broken'
       };
 
       const videoUrl = 'https://drive.google.com/uc?export=download&id=17opoizrGphsKr7OoIowtkEBTfJOWD3JO'; // Replace with your Google Drive video ID link
