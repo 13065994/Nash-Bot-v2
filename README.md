@@ -12,14 +12,14 @@
 </div>
 
 <div align="center">
-  <p>Welcome to NASH BOT - your ultimate companion for managing Facebook group chats with ease!</p>
+  <p>Welcome to NASH BOT V2 - your ultimate companion for managing Facebook group chats with ease!</p>
 </div>
 
 ## Features:
 
 - **Automated Greetings:** NASH BOT welcomes new members joining your group chats, making everyone feel at home.
 - **Custom Commands:** Easily create and customize your own commands to interact with the bot and perform various tasks.
-- **Dynamic Prefix:** NASH BOT adapts to your preferred command prefix, making it convenient to use according to your preferences.
+- **Dynamic Prefix:** NASH BOT V2 adapts to your preferred command prefix, making it convenient to use according to your preferences.
 - **User-friendly Interface:** With a sleek design and intuitive commands, NASH BOT offers a seamless user experience.
 - **Command Listing:** Quickly browse through available commands and their descriptions to maximize your bot experience.
 - **Active Session Tracking:** Stay informed about the number of active bot sessions, ensuring smooth operation at all times.
